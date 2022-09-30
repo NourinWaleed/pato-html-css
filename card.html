@@ -1,0 +1,101 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing:content-box;
+        font-family:cursive;
+      }
+      h1{ 
+        text-align: center;
+        
+      }
+
+      body{
+        height: 100vh;
+        display:grid;
+        align-items: center;
+        justify-content: center;
+        
+      }
+    
+      section .card .image{
+        height:140px;
+        width: 140px;
+        border-radius:100%;
+        border: 3px;
+
+      }
+
+      section .card .image img{
+     border-top-style: hidden;
+     margin-top: -100px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid blueviolet;
+      }
+
+      .card{
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: 300px 210px 70px;
+        grid-template-areas:"images" "text" "area";
+        position:relative;
+        background:rgb(246, 246, 246);
+        border: solid whitesmoke;
+        box-shadow: 5px 5px 15px rgba(239, 96, 96, 0.9);
+        box-sizing: border-box;
+        border-radius: 50px;
+        text-align: center;
+        
+      }
+    
+      
+  
+      .card .card-content{
+        display: flex;
+        padding: 90px;
+        flex-direction:column;
+        align-items: center;
+        position: relative;
+       
+      }
+    </style>
+</head>
+
+<body>
+
+  <section>
+
+    <div class="container">
+      <h1>"Best Cheef"</h1>
+      <br><br><br><br>
+      <div class="content">
+      <div class="card">
+        <div class="card-content">
+          <div class="image">
+            <img src="assets/images/images.jpg" alt="Cheef"/>
+            <br> <br> <br>
+             <div class="name-profession">
+              <span class="name"><h4>JOE</h4></span>
+              <br> 
+              <span class="profession"><h5 style="text-align:center; ">Love food</h5></span>
+              <br>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est debitis temporibus earum similique fugit hic iste nisi facere deleniti ducimus.</p>
+             </div>
+            </div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>.
